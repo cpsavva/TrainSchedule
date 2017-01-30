@@ -13,17 +13,19 @@
 </head>
 <body>
 <div class="container">
-	<div class="row">
+	<div class="jumbotron row">
+		<div class="col-sm-3"></div>
 		<div id="container"></div>
+		<div class="col-sm-3"></div>
 	</div>
 	<div class="row">
 		<div class="col-sm-9">
-		<div class="panel panel-default">
-  			<div class="panel-heading">
-    			<h3 class="panel-title">Current Train Schedule</h3>
-  			</div>
-  			<div class="panel-body">
-   				<table id= "trainTable" width="100%">
+			<div class="well" id="trainBoard">
+  				<div>
+    			<h1>BOOTCAMP LINE</h1>
+  				</div>
+  			
+   				<table class="table" id="trainTable" width="100%">
 					<th>Train Name</th>
 					<th>Destination</th>
 					<th>Frequency</th>
@@ -31,14 +33,13 @@
 					<th>Minutes Away</th>
 				</table>
   			</div>
-		</div>
+		
 		</div>
 		<div class="col-sm-3">
-		<div class="panel panel-default">
-  			<div class="panel-heading">
-    			<h3 class="panel-title">Add Train</h3>
+		<div class="well" id="submitForm">
+  			<div>
+    			<h4>New Line Submit Form</h3>
   			</div>
-  			<div class="panel-body">
   				<form>
 			<!--input form-->
 					<div class="form-group">
@@ -59,11 +60,10 @@
 					</div>
 					 <button type="submit" id="add-train-btn" class="btn btn-default">Submit</button>
 				</form>
-			</div>
-		</div>
-	</div>
-	</div>
-</div>
+		</div><!--well-->
+	</div><!--col-->
+	</div><!--row-->
+</div><!--cotainer-->
 </body>
 <!--firebase-->
 <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
