@@ -95,3 +95,24 @@ trainDatabase.ref().on("child_added",function(snapshot){
   console.log("The read failed: " + errorObject.code);
 });
  
+
+
+
+
+
+//  //=======flip clock=======///
+// var datetime = null,
+//         date = null;
+
+// function update() {
+//     date = moment();
+//     datetime.html("<span class='flipclock item hh'>"+date.format('HH')+"</span>"
+//       + "<span class='flipclock item'>"+date.format('mm')+"</span>"
+//       + "<span class='flipclock item ss'>"+ date.format('ss') + "</span>");
+// };
+
+// $(document).ready(function(){
+//     datetime = $('.flipclock')
+//     update();
+//     setInterval(update, 1000);
+// });
