@@ -6,20 +6,26 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 <!--style file-->
-<link rel="stylesheet" type="text/css" href="./style.css">
+
+<link rel="stylesheet" type="text/css" href="./flipclock/flipclock.css">
+<link rel="stylesheet" type="text/css" href="./style/style.css">
+
 </head>
 <body>
 <div class="container">
-	<div class="row">
-		<div class=""></div>
+	<div class="jumbotron row">
+		<div class="col-sm-3"></div>
+		<div id="container"></div>
+		<div class="col-sm-3"></div>
 	</div>
 	<div class="row">
-		<div class="panel panel-default">
-  			<div class="panel-heading">
-    			<h3 class="panel-title">Current Train Schedule</h3>
-  			</div>
-  			<div class="panel-body">
-   				<table id= "trainTable" width="100%">
+		<div class="col-sm-9">
+			<div class="well" id="trainBoard">
+  				<div>
+    			<h1>BOOTCAMP LINE</h1>
+  				</div>
+  			
+   				<table class="table" id="trainTable" width="100%">
 					<th>Train Name</th>
 					<th>Destination</th>
 					<th>Frequency</th>
@@ -27,14 +33,13 @@
 					<th>Minutes Away</th>
 				</table>
   			</div>
+		
 		</div>
-	</div>
-	<div class="row">
-		<div class="panel panel-default">
-  			<div class="panel-heading">
-    			<h3 class="panel-title">Add Train</h3>
+		<div class="col-sm-3">
+		<div class="well" id="submitForm">
+  			<div>
+    			<h4>New Line Submit Form</h3>
   			</div>
-  			<div class="panel-body">
   				<form>
 			<!--input form-->
 					<div class="form-group">
@@ -55,10 +60,10 @@
 					</div>
 					 <button type="submit" id="add-train-btn" class="btn btn-default">Submit</button>
 				</form>
-			</div>
-		</div>
-	</div>
-</div>
+		</div><!--well-->
+	</div><!--col-->
+	</div><!--row-->
+</div><!--cotainer-->
 </body>
 <!--firebase-->
 <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
@@ -74,6 +79,7 @@
 
 <!--script file-->
 <script type="text/javascript" src="./script.js"></script>
+<script type="text/javascript" src="./flipclock/flipclock.js"></script>
 
 
 

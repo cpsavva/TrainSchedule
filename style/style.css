@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'digital-7';
+  src: url('./digital-7_mono.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('./digital-7_mono.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
+
+body {
+	background-image: url('./nycgrandcentral.jpg');
+
+}
+
+#trainBoard{
+	background-color: black;
+	color: #faebd7;
+
+}
+#trainTable{
+	font-family: 'digital-7';
+	background-color: black;
+	color: #faebd7;
+	font-size: 20px;
+	
+}
+
+h1 {
+	margin-top: 0px;
+	text-align: center;
+	font-size: 30px;
+	font-family: Times, serif;
+}
+
+ h4, label, button {
+ 	font-family: Times, serif;
+ }
+
+ .jumbotron {
+ 	padding-bottom: 10px;
+ 	background-image: url("./nyCentralMercury.jpg");
+ }
+
+#submitForm {
+	font-family: Times, serif;
+	background-color: #F0EAD6;
+	color:black;
+	border-color: #faebd7;
+}
+.form-control {
+	font-family: Times, serif;
+	background-color: #F0EAD6;
+	color:black;
+	border-color: #faebd7;
+}
+
