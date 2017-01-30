@@ -1,3 +1,11 @@
+$(document).ready(function(){
+
+    // var day = moment().format("dddd");
+    // var date = moment().format("DD MMMM YYYY");
+    // console.log(day + date)
+
+    // $(".timeDate").html("<h2>" + day + "</h2><h2>" + date + "</h2>");
+
 //// Initialize Firebase
   var config = {
     apiKey: "AIzaSyCbuMscL4DhabjM-Bv3z8GMRJOZk2uMcAI",
@@ -96,7 +104,7 @@ trainDatabase.ref().on("child_added",function(snapshot){
 });
  
 
-
+});
 
 
 
