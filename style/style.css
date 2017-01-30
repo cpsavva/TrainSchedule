@@ -1,5 +1,11 @@
-#container {
-	height: 100px;
+@font-face {
+  font-family: 'digital-7';
+  src: url('./digital-7_mono.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+   url('./digital-7_mono.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}  
 
-
+#trainTable{
+	font-family: 'digital-7';
+	background-color: black;
+	color: yellow;
 }
